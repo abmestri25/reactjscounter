@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.apps{
+    margin-top: 25px;
+    display: flex;
+    object-fit: contain;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+
+.apps::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:768px){
+    .apps{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
